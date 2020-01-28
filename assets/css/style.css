@@ -1,0 +1,21 @@
+body {
+  background-image: url("../images/email-pattern.png");
+}
+header{
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: #cccccc;
+  margin-bottom: 1px;
+}
+.profile-pic {
+  height: 240px;
+  width: 240px;
+}
+.main-content{
+  width: 960px;
+  text-align: center;
+  margin: auto;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: #dddddd;
+}
