@@ -1,21 +1,126 @@
+/* Overall outline for the header, footer, and content area. Also styles information specifically for index */
+
 body {
   background-image: url("../images/email-pattern.png");
+  margin: 0;
 }
-header{
+header {
   background-color: #ffffff;
-  border: 2px solid;
+  border-bottom: 2px solid;
   border-color: #cccccc;
-  margin-bottom: 1px;
+  margin-bottom: 31px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  width: 100%;
+  position: static;
+}
+.navigation {
+  overflow: hidden;
+  margin: auto;
+  width: 960px;
+}
+.nav-links {
+  float: right;
+  margin-top: 30px;
+}
+.nav-links a {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777;
+  text-decoration: none;
+}
+.nav-links ul{
+  margin: 0;
+}
+.nav-links li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+#center-link {
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-color: #cccccc;
+}
+.name-tag {
+  background-color: #4aaaa5;
+  float: left;
+  width: 240px;
+  height: 80px;
+  text-align: center;
+}
+.name-tag h1 {
+  margin: 0;
+  margin-top: 10px;
+  color: #ffffff;
 }
 .profile-pic {
-  height: 240px;
-  width: 240px;
+  height: 200px;
+  width: 200px;
+  float: left;
+  overflow: auto;
+  padding-right: 15px;
 }
-.main-content{
-  width: 960px;
-  text-align: center;
+.main-content {
+  width: 940px;
   margin: auto;
   background-color: #ffffff;
   border: 2px solid;
   border-color: #dddddd;
+  padding: 20px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777;
+}
+.content-title {
+  border-bottom: 2px solid #dddddd;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+  text-align: left;
+}
+.content-body p {
+  text-align: left;
+  line-height: 3;
+}
+footer {
+  text-align: center;
+  position: fixed;
+  left: 0em;
+  bottom: 0em;
+  width: 100%;
+  border-top: 8px solid #4aaaa5;
+  background-color: #666666;
+  color: white;
+}
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* For contact form */
+
+form {
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+input[type=text],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid;
+  border-color: #dddddd;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  width: 100px;
+  height: 40px;
+  background-color: #4aaaa5;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: #dddddd;
+  font-weight: bold;
 }
