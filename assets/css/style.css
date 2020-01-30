@@ -100,7 +100,6 @@ form {
   padding-top: 20px;
   padding-right: 10px;
 }
-
 input[type=text],
 textarea {
   width: 100%;
@@ -110,11 +109,9 @@ textarea {
   margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 textarea {
   height: 200px;
 }
-
 input[type=submit] {
   width: 100px;
   height: 40px;
@@ -123,4 +120,64 @@ input[type=submit] {
   cursor: pointer;
   color: #dddddd;
   font-weight: bold;
+}
+
+/* For portfolio boxes */
+
+.box-field{
+  margin-top: 40px;
+  display: flex;
+  justify-content: left;
+  height: 960px;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+.boxes {
+  height: 240px;
+  width: 300px;
+  border: 2px solid #dddddd;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+.box-text-container {
+  text-align: center;
+  width: auto;
+  height: 40px;
+  margin-top: 190px;
+  background-color: #4aaaa5;
+}
+.box-text-container p {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+#box1 {
+  background-image: url(../images/hangman.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#box2 {
+  background-image: url(../images/trivia.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#box3 {
+  background-image: url(../images/rock-paper-scissors.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#box4 {
+  background-image: url(../images/rpg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#box5 {
+  background-image: url(../images/widget.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
