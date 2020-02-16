@@ -93,6 +93,13 @@ footer {
   display: block;
   clear: both;
 }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
 
 /* For contact form */
 
